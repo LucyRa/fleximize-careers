@@ -1,14 +1,16 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "fleximize/careers",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "Demo redesign of the Fleximize careers page.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
         "php": "^8.2",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "livewire/livewire": "^3.6",
+        "livewire/volt": "^1.7"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
