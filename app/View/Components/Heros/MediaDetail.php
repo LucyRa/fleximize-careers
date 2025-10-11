@@ -19,6 +19,7 @@ class MediaDetail extends Component
     ) {
         $needle = "/" . $this->keyword . "/i";
 
+        // Should almost certainly handle this more securely...
         if (preg_match($needle, $this->title)) {
             $titleArr = preg_split($needle, $this->title, 2);
 
