@@ -6,13 +6,12 @@
 
         <title>{{ config('app.name', 'Fleximize Careers') }}</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
-
+        <!-- Core base styles -->
         <style>
-
+            :root{font-size:16px;--black:#333;--white:#fff;--blue:#008abb;--lightblue:#daf1fa;--navy:#06435f;--yellow:#fda930}*,*::after,*::before{box-sizing:border-box;margin:0;padding:0}body{color:var(--black);font-family:"Open Sans",Arial,sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;font-variation-settings:"wdth" 100;font-size:1.125rem;line-height:1.5}footer,header,main,nav,section{width:100%}
         </style>
+
+        @stack('styles')
 
         <!-- Styles / Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])

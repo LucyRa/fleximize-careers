@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Open Sans";
+    src:
+        local("Open Sans"),
+        url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+@font-face {
+    font-family: "Caveat";
+    src:
+        local("Caveat"),
+        url("../fonts/Caveat/Caveat-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400 700;
+    font-style: normal;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.625rem;
+}
+
+h4 {
+    font-size: 1.375rem;
+}
+
+p,
+span,
+ul,
+ol {
+    > a {
+
+    }
+}
+
+.display {
+    .keyword {
+        font-family: "Caveat", "Open Sans",Arial,sans-serif;
+        font-size: 1.5em;
+    }
+}
+
+.display:not(h1) {
+    font-size: 3rem;
+}
+
+.small {
+    font-size: 0.875rem;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 27.5rem) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 46.5rem) {
+    .display:is(h1) {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 108rem) {
+    .display:is(*) {
+        font-size: 3.625rem;
+    }
+}

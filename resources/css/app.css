@@ -1,1 +1,16 @@
+@import './structure.css';
+@import './typography.css';
 @import './hero.css';
+
+:root {
+/*  Vars not already defined in <head>  */
+}
+
+/*
+ *  MEDIA QUERIES / SCREEN BREAKS:
+ *  @media only screen and (min-width: ...)
+ *  - <440px / 27.5rem = xsmall (small phone)
+ *  - <744px / 46.5rem = small (phone)
+ *  - <1280px / 80rem = medium (tablet)
+ *  - <1728px / 108rem = large (desktop)
+ */
