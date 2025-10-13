@@ -74,8 +74,6 @@
 
         <!-- Styles / Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-        @stack('styles')
     </head>
     <body>
         <header>
@@ -105,15 +103,15 @@
                 :media="url('/') . '/img/award.png'"
             />
 
-            <x-sections.job-listings />
+            <x-sections.job-listings heading="Open Opportunities"
+                blurb="Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur quis, montes porta nisi dictum habitasse ante ullamcorper est."
+            />
 
             <x-sections.accordions-media-detail />
         </main>
 
         <!-- Fix to bottom and hide behind main to reveal on scroll. -->
         <!-- Main will need padding to match the height of the footer. -->
-        <footer>
-
-        </footer>
+        <footer></footer>
     </body>
 </html>

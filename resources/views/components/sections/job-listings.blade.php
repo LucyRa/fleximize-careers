@@ -1,11 +1,22 @@
-@pushOnce('styles')
-<style>
-.job-listings {
+<section id="job-listings" class="job-listings">
+    <div class="container">
+        <div class="intro">
+            <h2 class="box-heading box-heading--navy">{{ $heading }}</h2>
 
-}
-</style>
-@endPushOnce
+            <p>{{ $blurb }}</p>
+        </div>
 
-<section class="job-listings">
-    <!-- It is not the man who has too little, but the man who craves more, that is poor. - Seneca -->
+        <ul class="jobs-list">
+            @forelse($results['jobs'] as $jobs)
+            <li class="card--job">
+
+            </li>
+            
+            @empty
+            <li class="card--lg">
+
+            </li>
+            @endforelse
+        </ul>
+    </div>
 </section>
