@@ -30,9 +30,9 @@
                 position: relative;
                 min-height: 100dvh;
                 background-color: var(--navy);
-                background-image: radial-gradient(farthest-corner at 100% 0%,
-                    var(--midblue) 0%,
-                    var(--navy) 100%);
+                background-image: radial-gradient(farthest-corner at 80% -25%,
+                    var(--midblue) 8%,
+                    var(--navy) 54%);
                 color: var(--black);
                 font-family: "Open Sans", Arial, sans-serif;
                 font-optical-sizing: auto;
