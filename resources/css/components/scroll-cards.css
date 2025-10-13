@@ -1,0 +1,51 @@
+.scroll-cards {
+    .heading {
+        display: flex;
+        gap: 0.5rem;
+        align-items: baseline;
+        color: var(--white);
+
+        h2 {
+            color: inherit;
+        }
+
+        p {
+            display: inline-flex;
+            gap: 0.25rem;
+            align-items: center;
+            font-family: "Caveat", cursive, sans-serif;
+            color: var(--lightblue);
+        }
+
+        svg {
+            width: 1rem;
+            transform: rotate(-90deg);
+        }
+    }
+
+    ul.track {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 100%;
+        padding-inline: 1rem;
+        background-color: var(--lightblue);
+        box-shadow: 0 -0.25rem 1rem rgba(6, 67, 95, 32),0 0.25rem 1rem rgba(6, 67, 95, 32);
+    }
+}
+
+li.scroll-card {
+    display: block;
+    aspect-ratio: 1/1;
+    min-width: 17.5rem;
+    padding: 2rem 1rem;
+    border-inline-end: 1px solid var(--midblue);
+
+    svg, h3 {
+        margin-block-end: 1rem;
+    }
+
+    &:first-of-type {
+        border-inline-start: 1px solid var(--midblue);
+    }
+}

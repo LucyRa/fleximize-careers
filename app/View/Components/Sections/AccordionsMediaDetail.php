@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\Headings;
+namespace App\View\Components\Sections;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Pill extends Component
+class AccordionsMediaDetail extends Component
 {
     /**
      * Create a new component instance.
@@ -21,10 +21,6 @@ class Pill extends Component
      */
     public function render(): View|Closure|string
     {
-        return <<<'blade'
-<div>
-    <!-- Always remember that you are absolutely unique. Just like everyone else. - Margaret Mead -->
-</div>
-blade;
+        return view('components.sections.accordions-media-detail');
     }
 }

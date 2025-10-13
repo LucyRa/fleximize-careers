@@ -1,6 +1,13 @@
+@import './remedy.css';
+
 @import './structure.css';
 @import './typography.css';
-@import './hero.css';
+
+@import './components/icons.css';
+@import './components/btn.css';
+@import './components/hero.css';
+@import './components/scroll-cards.css';
+@import './components/media-detail.css';
 
 :root {
 /*  Vars not already defined in <head>  */
@@ -9,8 +16,8 @@
 /*
  *  MEDIA QUERIES / SCREEN BREAKS:
  *  @media only screen and (min-width: ...)
- *  - <440px / 27.5rem = xsmall (small phone)
- *  - <744px / 46.5rem = small (phone)
- *  - <1280px / 80rem = medium (tablet)
- *  - <1728px / 108rem = large (desktop)
+ *  - <440px / 27.5rem = small (phone)
+ *  - <744px / 46.5rem = medium (tablet)
+ *  - <1280px / 80rem = large (desktop)
+ *  - <1728px / 108rem = xLarge (desktop lg)
  */

@@ -22,34 +22,61 @@ h2,
 h3,
 h4 {
     font-weight: 700;
+    letter-spacing: -0.08em;
+    color: var(--navy);
 }
 
 h1,
-h2 {
+h2,
+.h1,
+.h2 {
     font-size: 2rem;
 }
 
-h3 {
+h3,
+.h3 {
     font-size: 1.625rem;
 }
 
-h4 {
+h4,
+.h4 {
     font-size: 1.375rem;
 }
 
 p,
 span,
 ul,
-ol {
+ol,
+button {
+    font-size: inherit;
+    font-family: inherit;
+
     > a {
 
     }
 }
 
+.box-heading {
+    position: relative;
+    isolation: isolate;
+    padding-inline: 1.5rem;
+    background-image: url('data:image/svg+xml,<svg viewBox="0 0 578 87" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 0H578L560.5 87H0L19 0Z" fill="white"/></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    h1, h2 {
+        color: var(--navy);
+    }
+}
+
 .display {
-    .keyword {
-        font-family: "Caveat", "Open Sans",Arial,sans-serif;
-        font-size: 1.5em;
+    font-weight: 900;
+
+    > span {
+        font-size: 3.65rem;
+        line-height: 1em;
+        text-transform: uppercase;
     }
 }
 
@@ -74,6 +101,10 @@ ol {
 @media only screen and (min-width: 46.5rem) {
     .display:is(h1) {
         font-size: 3rem;
+    }
+
+    .display > span {
+        font-size: 6rem;
     }
 }
 
