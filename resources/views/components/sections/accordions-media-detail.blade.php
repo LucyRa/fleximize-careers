@@ -1,3 +1,5 @@
-<div>
-    <!-- Breathing in, I calm body and mind. Breathing out, I smile. - Thich Nhat Hanh -->
-</div>
+<section class="media-detail--accordions">
+    <div clas="container">
+
+    </div>
+</section>

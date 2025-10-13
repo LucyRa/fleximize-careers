@@ -83,6 +83,8 @@
                     <img src="data:image/png;base64,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" style="width: 30px;height:46px;" />
                 </picture>
             </nav>
+
+            <!-- Floating breadcrumb - hide on scroll (smooth transition up under nav) -->
         </header>
 
         <main>
@@ -107,7 +109,12 @@
                 blurb="Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur quis, montes porta nisi dictum habitasse ante ullamcorper est."
             />
 
-            <x-sections.accordions-media-detail />
+            <x-sections.accordions-media-detail title=""
+                blurb=""
+                heading=""
+                :mediaset=[]
+                :featureDetail=[]
+            />
         </main>
 
         <!-- Fix to bottom and hide behind main to reveal on scroll. -->
