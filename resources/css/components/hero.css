@@ -42,7 +42,6 @@
         position: relative;
         isolation: isolate;
         display: block;
-        width: fit-content;
 
         img,
         picture {
@@ -63,7 +62,7 @@
         .media > img,
         .media > picture {
             width: 85vw;
-            max-width: 41.5rem;
+            max-width: 33.625rem;
             margin-inline: auto 1.5rem;
         }
     }
