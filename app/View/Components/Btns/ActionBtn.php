@@ -24,7 +24,7 @@ class ActionBtn extends Component
     public function render(): View|Closure|string
     {
         return <<<'blade'
-        <button class="btn--action" type="button" data-action="{{ $action }}" @if($target != "")data-action-target="{{ $target }}"@endif>
+        <button class="btn--action" type="button" data-action="{{ $action }}" @if($target != "")data-action-target="{{ $target }}"@endif tabindex="0">
             <span>{{ $cta }}</span>
             <x-dynamic-component :component="'icons.' . $icon" fill="#06435f" />
         </button>
