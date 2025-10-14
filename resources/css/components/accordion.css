@@ -8,6 +8,10 @@ li.accordion {
     overflow: hidden;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(6,67,95,24%);
 
+    &:focus-within {
+        outline: 0.125rem var(--blue) dashed;
+    }
+
     details {
         background-color: var(--lightgrey);
     }

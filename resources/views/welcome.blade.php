@@ -22,6 +22,9 @@
                 --navheight: 2.5rem;
                 --containerpad: 2rem;
             }
+            *:focus-visible {
+                outline: 0.25rem var(--blue) dashed;
+            }
             *,
             *::after,
             *::before {
