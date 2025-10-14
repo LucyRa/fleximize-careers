@@ -1,4 +1,4 @@
-<section class="feature-media-detail">
+<section class="media-detail media-detail--feature">
     <div class="container">
         <div class="title">
             <h2 class="box-heading">

@@ -1,3 +1,9 @@
+.intro {
+    &:has(+ *) {
+        margin-block-end: 2rem;
+    }
+}
+
 .box-heading {
     position: relative;
     isolation: isolate;

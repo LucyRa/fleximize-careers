@@ -1,4 +1,4 @@
-<section id="job-listings" class="job-listings">
+<section id="job-listings" class="job-listings p-b">
     <div class="container">
         <div class="intro">
             <h2 class="box-heading">{{ $heading }}</h2>
@@ -8,7 +8,7 @@
 
         <ul class="jobs-list">
             @forelse($results['jobs'] as $job)
-            <li class="card--job">
+            <li class="card card--job">
                 <article>
                     <h3>
                         {{ $job['title'] }}
@@ -48,8 +48,14 @@
             </li>
             
             @empty
-            <li class="card--lg">
+            <li class="card card--full">
+                <h3>
+                    {{ $results['empty']['title'] }}
+                </h3>
 
+                <p>
+                    {{ $results['empty']['body'] }}
+                </p>
             </li>
             @endforelse
         </ul>

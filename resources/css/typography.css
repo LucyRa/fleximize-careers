@@ -34,7 +34,8 @@ h2,
 }
 
 h3,
-.h3 {
+.h3,
+h2.box-heading {
     font-size: 1.625rem;
 }
 

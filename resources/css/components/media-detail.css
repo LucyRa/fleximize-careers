@@ -1,4 +1,22 @@
-.feature-media-detail {
+.media-detail {
+    .btn,
+    .btn--action {
+        margin-block-start: 1.5rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-block-start: 2.5rem;
+    }
+}
+
+.media-detail--accordions {
+    background-color: var(--lightblue);
+}
+
+.media-detail--feature {
     background: transparent;
     padding-block: 7.375rem 4.5rem;
     margin-block-end: 2rem;
@@ -23,24 +41,12 @@
         }
     }
 
-    .content {
-        display: flex;
-        flex-direction: column;
-        gap: 2.5rem;
-        margin-block-start: 2.5rem;
-    }
-
     h3, p {
         color: var(--white);
     }
 
     h3 {
         margin-block-end: 1rem;
-    }
-
-    .btn,
-    .btn--action {
-        margin-block-start: 1.5rem;
     }
 
     .media {

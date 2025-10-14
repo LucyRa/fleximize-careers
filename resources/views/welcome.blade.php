@@ -64,6 +64,9 @@
             main {
                 display: flow-root;
             }
+            section.p-b {
+                padding-block: 3.5rem 4.5rem;
+            }
             .container{
                 width: calc(100vw - 2rem);
                 margin-inline: auto;
@@ -112,11 +115,11 @@
                 blurb="Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur quis, montes porta nisi dictum habitasse ante ullamcorper est."
             />
 
-            <x-sections.accordions-media-detail title=""
-                blurb=""
-                heading=""
-                :mediaset=[]
-                :featureDetail=[]
+            <x-sections.accordions-media-detail title="FlexFamily Values"
+                blurb="We’re an exciting, fast-growing company with a dynamic team, and we’re always looking for the right people to join us."
+                heading="We want people who are..."
+                :$accordions
+                :$mediaset
             />
         </main>
 

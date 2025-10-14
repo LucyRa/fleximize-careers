@@ -15,6 +15,7 @@ class AccordionsMediaDetail extends Component
         public string $title,
         public string $blurb,
         public string $heading,
+        public array $accordions,
         public array $mediaset,
         public array $featureDetail = []
     ){}
