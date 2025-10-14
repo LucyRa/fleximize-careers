@@ -2,15 +2,15 @@
     position: fixed;
     inset: auto auto 1rem 1rem;
     z-index: 5;
+    overflow: hidden;
+    border: 0.25rem solid var(--white);
+    border-radius: 2.5rem;
 
     ul {
         display: flex;
         margin: 0;
         height: 2.5rem;
         background-color: var(--white);
-        border: 0.125rem solid var(--navy);
-        border-radius: 2.5rem;
-        overflow: hidden;
     }
 
     li {
