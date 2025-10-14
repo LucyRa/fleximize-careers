@@ -51,7 +51,6 @@
             nav,
             section {
                 width: 100vw;
-                overflow: hidden;
             }
             header {
                 position: fixed;

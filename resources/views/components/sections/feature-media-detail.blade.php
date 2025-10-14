@@ -1,7 +1,7 @@
 <section class="media-detail media-detail--feature">
     <div class="container">
         <div class="title">
-            <h2 class="box-heading">
+            <h2 class="box-heading display">
                 {{ $title }}
             </h2>
 
