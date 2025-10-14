@@ -6,6 +6,7 @@
     padding: var(--navheight) 0 4.5rem 0;
     margin-block-end: 2.5rem;
     color: var(--white);
+    overflow: initial;
 
     &::before {
         content: url('data:image/svg+xml,<svg viewBox="0 0 517 506" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.380862 252.93C0.380863 382.663 258.557 252.93 258.557 252.93C258.557 252.93 0.380861 123.198 0.380862 252.93Z" fill="%23FFB51F"/><path d="M516.73 252.931C516.73 382.664 258.555 252.931 258.555 252.931C258.555 252.931 516.73 123.199 516.73 252.931Z" fill="%23FFB51F"/><path d="M129.468 476.517C241.82 541.383 258.555 252.932 258.555 252.932C258.555 252.932 17.1152 411.651 129.468 476.517Z" fill="%23FFB51F"/><path d="M387.645 29.346C499.998 94.2123 258.557 252.931 258.557 252.931C258.557 252.931 275.293 -35.5202 387.645 29.346Z" fill="%23FFB51F"/><path d="M387.647 476.52C275.294 541.386 258.559 252.935 258.559 252.935C258.559 252.935 499.999 411.654 387.647 476.52Z" fill="%23FFB51F"/><path d="M129.469 29.348C17.1166 94.2142 258.557 252.933 258.557 252.933C258.557 252.933 241.821 -35.5182 129.469 29.348Z" fill="%23FFB51F"/></svg>');
@@ -27,6 +28,10 @@
         color: inherit;
     }
 
+    p {
+        max-width: 35rem;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -37,6 +42,7 @@
         position: relative;
         isolation: isolate;
         display: block;
+        width: fit-content;
 
         img,
         picture {
@@ -54,18 +60,45 @@
     }
 
     @media only screen and (min-width: 27.5rem) {
-
+        .media > img,
+        .media > picture {
+            width: 85vw;
+            max-width: 41.5rem;
+            margin-inline: auto 1.5rem;
+        }
     }
 
     @media only screen and (min-width: 46.5rem) {
+        &::before {
+            width: 20rem;
+            inset: -1rem 0 0 -7rem;
+        }
 
+        article {
+            padding: 13.75rem 0 0 2.5rem;
+        }
+
+        .media::before {
+            width: 17.188rem;
+        }
     }
 
-    @media only screen and (min-width: 80rem) {
+    @media only screen and (min-width: 67.5rem) {
+        .container {
+            flex-direction: row;
+        }
 
+        .media > img,
+        .media > picture {
+            width: clamp(45vw, 33.625rem, 43.5rem);
+            max-width: 43.5rem;
+        }
     }
 
     @media only screen and (min-width: 108rem) {
-
+        .media::before {
+            width: 22.25rem;
+            inset: auto -4rem -10rem auto;
+        }
     }
 }
