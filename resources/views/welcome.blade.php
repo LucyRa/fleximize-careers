@@ -24,9 +24,9 @@
                 </picture>
                 </div>
             </nav>
-
-            <!-- Floating breadcrumb - hide on scroll (smooth transition up under nav) -->
         </header>
+
+        <livewire:breadcrumbs />
 
         <main>
             <!-- Hero -->

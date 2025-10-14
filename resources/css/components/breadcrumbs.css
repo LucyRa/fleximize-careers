@@ -1,0 +1,55 @@
+.breadcrumbs {
+    position: fixed;
+    inset: auto auto 1rem 1rem;
+    z-index: 5;
+
+    ul {
+        display: flex;
+        margin: 0;
+        height: 2.5rem;
+        background-color: var(--white);
+        border: 0.125rem solid var(--navy);
+        border-radius: 2.5rem;
+        overflow: hidden;
+    }
+
+    li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0.25rem 1rem;
+        border-radius: 0 99rem 99rem 0;
+        background-color: var(--lightblue);
+
+        &::after {
+            content: url('data:image/svg+xml,<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.53 17.6304C24.155 17.0054 24.155 15.9904 23.53 15.3654L13.93 5.76535C13.305 5.14035 12.29 5.14035 11.665 5.76535C11.04 6.39035 11.04 7.40535 11.665 8.03035L20.135 16.5004L11.67 24.9704C11.045 25.5954 11.045 26.6104 11.67 27.2354C12.295 27.8604 13.31 27.8604 13.935 27.2354L23.535 17.6354L23.53 17.6304Z" fill="%23333333"/></svg>');
+            position: absolute;
+            inset: 1rem 0.25rem auto auto;
+            width: 0.5rem;
+            height: 0.5rem;
+        }
+
+        &:nth-of-type(2) {
+            background-color: var(--midblue);
+            padding-inline-start: 3.5rem;
+            color: var(--white);
+        }
+
+        &:nth-of-type(3) {
+            background-color: var(--lightblue);
+        }
+
+        &:last-of-type {
+            background-color: var(--white);
+        }
+
+        &:has(svg) {
+            position: absolute;
+            inset: 0 auto auto 0;
+            z-index: 1;
+            padding: 0.5rem;
+            border-radius: 99rem;
+            background-color: var(--navy);
+        }
+    }
+}

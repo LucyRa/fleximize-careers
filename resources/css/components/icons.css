@@ -2,3 +2,9 @@
     width: 3.5rem;
     border-radius: 0.5rem;
 }
+
+.icon-round {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
