@@ -1,14 +1,14 @@
 <section id="job-listings" class="job-listings p-b">
     <div class="container">
         <div class="intro">
-            <h2 class="box-heading">{{ $heading }}</h2>
+            <h2 class="box-heading" id="jobs-list-title">{{ $heading }}</h2>
 
             <p>{{ $blurb }}</p>
         </div>
 
         <ul class="jobs-list">
             @forelse($results['jobs'] as $job)
-            <li class="card card--job">
+            <li class="card card--job" role="tablist" aria-labelledby="jobs-list-title" tabindex="0">
                 <article>
                     <h3>
                         {{ $job['title'] }}
