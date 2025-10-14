@@ -53,7 +53,12 @@
     @media only screen and (min-width: 67.5rem) {
         .content {
             flex-direction: row;
+            justify-content: flex-start;
             gap: 2.5rem;
+
+            > div {
+                align-self: flex-start;
+            }
         }
 
         .detail {
