@@ -38,22 +38,22 @@
                 </div>
                 @endforeach
             </div>
-
-            @if(!empty($featureDetail))
-            <div class="card card--feature">
-                <div class="icon-heading">
-                    @if($featureDetail['icon'])
-                    <x-dynamic-component :component="'icons.' . $featureDetail['icon']" color="currentColor" />
-                    @endif
-
-                    <h3>{{ $featureDetail['title'] }}</h3>
-                </div>
-
-                <p>
-                    {{ $featureDetail['body'] }}
-                </p>
-            </div>
-            @endif
         </article>
+
+        @if(!empty($featureDetail))
+        <div class="card card--feature">
+            <div class="icon-heading">
+                @if($featureDetail['icon'])
+                <x-dynamic-component :component="'icons.' . $featureDetail['icon']" color="currentColor" />
+                @endif
+
+                <h3>{{ $featureDetail['title'] }}</h3>
+            </div>
+
+            <p>
+                {{ $featureDetail['body'] }}
+            </p>
+        </div>
+        @endif
     </div>
 </section>
