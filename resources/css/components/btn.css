@@ -1,6 +1,10 @@
 button {
 	border: none;
 	outline: inherit;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .btn--action {
@@ -16,5 +20,28 @@ button {
 
     svg {
         width: 2.5rem;
+    }
+}
+
+.btn--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    background-color: var(--yellow);
+    border-radius: 99rem;
+
+    svg {
+        width: 1.5rem;
+        color: var(--black);
+        rotate: -90deg;
+    }
+}
+
+
+@media only screen and (min-width: 80rem) {
+    .btn--link {
+        width: fit-content;
     }
 }

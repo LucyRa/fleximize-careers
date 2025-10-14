@@ -47,27 +47,31 @@ p,
 span,
 ul,
 ol,
-button {
+button,
+a {
     font-size: inherit;
     font-family: inherit;
+}
 
-    > a {
+a {
+    color: var(--blue);
+    font-weight: 700;
+}
 
-    }
+.btn--link {
+    color: var(--black);
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
 }
 
 .box-heading {
-    position: relative;
-    isolation: isolate;
-    padding-inline: 1.5rem;
-    background-image: url('data:image/svg+xml,<svg viewBox="0 0 578 87" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 0H578L560.5 87H0L19 0Z" fill="white"/></svg>');
-    background-size: cover;
-    background-repeat: no-repeat;
     text-align: center;
+    color: var(--navy);
+}
 
-    h1, h2 {
-        color: var(--navy);
-    }
+.box-heading--navy {
+    color: var(--white);
 }
 
 .display {

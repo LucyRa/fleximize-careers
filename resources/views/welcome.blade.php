@@ -12,6 +12,8 @@
                 font-size: 16px;
                 --black: #333;
                 --white: #fff;
+                --midgrey: #444;
+                --lightgrey: #f4f4f4;
                 --blue: #008abb;
                 --midblue: #186285;
                 --lightblue: #daf1fa;
@@ -33,6 +35,7 @@
                 background-image: radial-gradient(farthest-corner at 80% -25%,
                     var(--midblue) 8%,
                     var(--navy) 54%);
+                background-attachment: fixed;
                 color: var(--black);
                 font-family: "Open Sans", Arial, sans-serif;
                 font-optical-sizing: auto;

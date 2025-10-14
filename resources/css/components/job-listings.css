@@ -1,3 +1,28 @@
 .job-listings {
+    padding-block: 3.5rem 4.5rem;
+    background-color: var(--midblue);
+    color: var(--white);
+
+    .intro:has(+ .jobs-list) {
+        margin-block-end: 2rem;
+    }
+
+    ul.jobs-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
     
+    @media only screen and (min-width: 46.5rem) {
+        ul.jobs-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media only screen and (min-width: 80rem) {
+        ul.jobs-list {
+            gap: 2.5rem;
+        }
+    }
 }

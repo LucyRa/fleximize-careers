@@ -1,0 +1,17 @@
+.box-heading {
+    position: relative;
+    isolation: isolate;
+    margin-block-end: 1.5rem;
+    padding-inline: 1.5rem;
+    background-image: url('data:image/svg+xml,<svg viewBox="0 0 578 87" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 0H578L560.5 87H0L19 0Z" fill="white"/></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media only screen and (min-width: 46.5rem) {
+        margin-block-end: 2rem;
+    }
+}
+
+.box-heading--navy {
+    background-image: url('data:image/svg+xml,<svg viewBox="0 0 578 87" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 0H578L560.5 87H0L19 0Z" fill="%2306435f"/></svg>');
+}

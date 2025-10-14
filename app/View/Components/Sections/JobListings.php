@@ -27,37 +27,43 @@ class JobListings extends Component
                     'title' => 'Front-end Web Developer/Designer',
                     'body' => 'Shaping our digital products and delivering exceptional user experiences.',
                     'type' => 'Full-time',
-                    'location' => 'Hybrid'
+                    'location' => 'Hybrid',
+                    'link' => '#'
                 ],
                 [
                     'title' => 'Business Lending Trainee',
                     'body' => 'Focusing on administrative duties that primarily support the Relationship Management (Underwriting), Customer Care and Business Development Teams.',
                     'type' => 'Full-time',
-                    'location' => 'On-site'
+                    'location' => 'On-site',
+                    'link' => '#'
                 ],
                 [
                     'title' => 'Lorem Ipsum Dolor',
                     'body' => 'Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur quis.',
                     'type' => 'Part-time',
-                    'location' => 'Remote'
+                    'location' => 'Remote',
+                    'link' => '#'
                 ],
                 [
                     'title' => 'Lorem Ipsum Dolor',
                     'body' => 'Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur quis.',
                     'type' => 'Full-time',
-                    'location' => 'On-site'
+                    'location' => 'On-site',
+                    'link' => '#'
                 ],
                 [
                     'title' => 'Lorem Ipsum Dolor',
                     'body' => 'Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur quis.',
                     'type' => 'Part-time',
-                    'location' => 'Remote'
+                    'location' => 'Remote',
+                    'link' => '#'
                 ],
                 [
                     'title' => 'Lorem Ipsum Dolor',
                     'body' => 'Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur quis.',
                     'type' => 'Full-time',
-                    'location' => 'Hybrid'
+                    'location' => 'Hybrid',
+                    'link' => '#'
                 ],
             ],
             'empty' => [
