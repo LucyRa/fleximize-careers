@@ -23,14 +23,31 @@
         }
     }
 
+    .scroll-cards__wrapper {
+        width: 100%;
+        background-color: var(--lightblue);
+        box-shadow: 0 -0.25rem 1rem rgba(6, 67, 95, 32),0 0.25rem 1rem rgba(6, 67, 95, 32);
+    }
+
     ul.track {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: scroll;
         width: 100%;
-        padding-inline: 1rem;
-        background-color: var(--lightblue);
-        box-shadow: 0 -0.25rem 1rem rgba(6, 67, 95, 32),0 0.25rem 1rem rgba(6, 67, 95, 32);
+        height: 17.5rem;
+        padding-inline: calc(var(--containerpad) / 2);
+    }
+
+    @media only screen and (min-width: 115.5rem) {
+        .scroll-cards__wrapper {
+            padding-inline: calc(var(--containerpad) / 2);
+        }
+
+        ul.track {
+            max-width: 122.5rem;
+            margin-inline: auto;
+            padding-inline: 0;
+        }
     }
 }
 
