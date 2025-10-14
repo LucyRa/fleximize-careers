@@ -10,12 +10,21 @@
             <div class="detail">
                 <h3 class="underline">{{ $heading }}</h3>
 
-                <ul>
+                <ul class="accordions">
                     @foreach($accordions as $accordion)
-                    <li>
+                    <li class="accordion">
                         <details class="accordion accordion--{{ $accordion['icon'] }}">
-                            <summary>{{ $accordion['summary'] }}</summary>
-                            {{ $accordion['details'] }}
+                            <summary>
+                                @if($accordion['icon'])
+                                <x-dynamic-component :component="'icons.' . $accordion['icon']" color="currentColor" />
+                                @endif
+
+                                <h4>{{ $accordion['summary'] }}</h4>
+                            </summary>
+
+                            <div>
+                                {{ $accordion['details'] }}
+                            </div>
                         </details>
                     </li>
                     @endforeach
@@ -24,13 +33,25 @@
 
             <div class="media media--bento-{{ count($mediaset) }}">
                 @foreach($mediaset as $media)
-                <img src="{{ $media }}" alt="Placeholder alt..." />
+                <div>
+                    <img src="{{ $media }}" alt="Placeholder alt..." />
+                </div>
                 @endforeach
             </div>
 
             @if(!empty($featureDetail))
-            <div class="card card--lg">
-                
+            <div class="card card--feature">
+                <div class="icon-heading">
+                    @if($featureDetail['icon'])
+                    <x-dynamic-component :component="'icons.' . $featureDetail['icon']" color="currentColor" />
+                    @endif
+
+                    <h3>{{ $featureDetail['title'] }}</h3>
+                </div>
+
+                <p>
+                    {{ $featureDetail['body'] }}
+                </p>
             </div>
             @endif
         </article>

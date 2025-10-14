@@ -64,6 +64,9 @@
             main {
                 display: flow-root;
             }
+            p {
+                max-width: 70ch;
+            }
             section.p-b {
                 padding-block: 3.5rem 4.5rem;
             }
@@ -74,6 +77,9 @@
             @media only screen and (min-width: 46.5rem) {
                 :root {
                     --navheight: 4rem;
+                }
+                .container {
+                    width: calc(100vw - 4rem);
                 }
             }
         </style>
@@ -120,6 +126,7 @@
                 heading="We want people who are..."
                 :$accordions
                 :$mediaset
+                :$featureDetail
             />
         </main>
 

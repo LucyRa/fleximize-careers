@@ -5,8 +5,10 @@
 @import './common.css';
 
 @import './components/icons.css';
+@import './components/accordion.css';
 @import './components/btn.css';
 @import './components/card.css';
+
 @import './components/hero.css';
 @import './components/scroll-cards.css';
 @import './components/media-detail.css';

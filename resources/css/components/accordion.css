@@ -1,0 +1,49 @@
+ul.accordions {
+
+}
+
+li.accordion {
+    margin-block-end: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(6,67,95,24%);
+
+    details {
+        background-color: var(--lightgrey);
+    }
+
+    details > div,
+    summary {
+        padding: 1rem;
+    }
+
+    summary {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        background-color: var(--white);
+        color: var(--navy);
+
+        &::after {
+            content: url('data:image/svg+xml,<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8696 24.03C15.4946 24.655 16.5096 24.655 17.1346 24.03L26.7346 14.43C27.3596 13.805 27.3596 12.79 26.7346 12.165C26.1096 11.54 25.0946 11.54 24.4696 12.165L15.9996 20.635L7.52965 12.17C6.90465 11.545 5.88965 11.545 5.26465 12.17C4.63965 12.795 4.63965 13.81 5.26465 14.435L14.8646 24.035L14.8696 24.03Z" fill="currentColor"/></svg>');
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    summary > h4 {
+        width: 100%;
+        color: var(--black);
+    }
+
+    summary > svg {
+        width: 1.5rem;
+    }
+
+}

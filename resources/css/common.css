@@ -14,10 +14,34 @@
     background-repeat: no-repeat;
 
     @media only screen and (min-width: 46.5rem) {
+        width: fit-content;
         margin-block-end: 2rem;
     }
 }
 
 .box-heading--navy {
     background-image: url('data:image/svg+xml,<svg viewBox="0 0 578 87" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 0H578L560.5 87H0L19 0Z" fill="%2306435f"/></svg>');
+}
+
+.icon-heading {
+
+}
+
+h1.underline,
+h2.underline,
+h3.underline {
+    position:relative;
+    isolation: isolate;
+    padding-block-end: 1rem;
+
+    &:has(+ *) {
+        margin-block-end: 1.5rem;
+    }
+
+    &::after {
+        content: url('data:image/svg+xml,<svg width="280" height="14" viewBox="0 0 285 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.147115 10.0757L14.9538 14C47.0626 8.0448 126.298 -2.07077 285 10.7892C252.309 0.729145 144.99 -5.69515 1.90982 7.22171C0.0793163 7.9439 -0.243807 8.58992 0.147115 10.0757Z" fill="%23FFB51F"/></svg>');
+        position: absolute;
+        inset: auto auto -0.5rem 0;
+        width: 17.5rem;
+    }
 }
