@@ -11,8 +11,12 @@
     }
 }" @scroll.window="toggleOnScroll" x-show="visible" x-transition.duration.500ms x-transition.opacity>
     <ul>
-        <li><a href="" class="icon-round"><x-icons.house-chimney-full color="#DAF1FA" /></a></li>
-        <li>About us</li>
-        <li>Careers</li>
+        <li><a href="#" class="icon-round"><x-icons.house-chimney-full color="#DAF1FA" /></a></li>
+
+        @foreach($links as $link)
+        <li wire:key="{{ $link['title'] }}"><a href="{{ $link['url'] }}">About us</a></li>
+        @endforeach
+
+        <li>{{ $current }}</li>
     </ul>
 </div>

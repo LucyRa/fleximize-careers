@@ -13,7 +13,14 @@ import '../fonts/Caveat/Caveat-VariableFont_wght.ttf';
         let scrollToTarget = (el) => {
             if (el.dataset.actionTarget) {
                 let target = document.getElementById(el.dataset.actionTarget)
-                target.scrollIntoView({ behavior: "smooth" });
+                let tablist = target.querySelector('[role="tablist"]')
+
+
+                target.scrollIntoView({ behavior: "smooth" })
+                if (tablist) {
+                    let tab = tablist.querySelector('[role="tabpanel"]')
+                    tab.focus({focusVisible: true});
+                }
             }
         }
         actionBtns.forEach(btn => {
@@ -21,7 +28,9 @@ import '../fonts/Caveat/Caveat-VariableFont_wght.ttf';
                 scrollToTarget(btn)
             })
             btn.addEventListener("keyup", function (ev) {
-                scrollToTarget(btn)
+                if (ev.key === "Enter") {
+                    scrollToTarget(btn)
+                }
             })
         });
     }

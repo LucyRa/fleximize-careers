@@ -45,19 +45,23 @@ li.scroll-card h3 {
     font-size: 1.375rem;
 }
 
+a {
+    color: var(--blue);
+    font-weight: 700;
+}
+
 p,
 span,
 ul,
 ol,
 button,
-a {
+a,
+.breadcrumbs > li > a:not(.icon-round) {
     font-size: inherit;
     font-family: inherit;
-}
-
-a {
-    color: var(--blue);
-    font-weight: 700;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .btn--link {

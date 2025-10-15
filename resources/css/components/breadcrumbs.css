@@ -3,7 +3,7 @@
     inset: auto auto 1rem 1rem;
     z-index: 5;
     overflow: hidden;
-    border: 0.25rem solid var(--white);
+    border: 0.125rem solid var(--white);
     border-radius: 2.5rem;
 
     ul {

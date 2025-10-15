@@ -6,9 +6,9 @@
             <p>{{ $blurb }}</p>
         </div>
 
-        <ul class="jobs-list">
+        <ul class="jobs-list" role="tablist" aria-labelledby="jobs-list-title">
             @forelse($results['jobs'] as $job)
-            <li class="card card--job" role="tablist" aria-labelledby="jobs-list-title" tabindex="0">
+            <li class="card card--job" role="tabpanel" tabindex="0">
                 <article>
                     <h3>
                         {{ $job['title'] }}

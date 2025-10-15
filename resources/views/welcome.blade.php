@@ -26,7 +26,7 @@
             </nav>
         </header>
 
-        <livewire:breadcrumbs />
+        <livewire:breadcrumbs :links="[['title' => 'About us', 'url' => '#']]" :current="'Careers'" />
 
         <main>
             <!-- Hero -->
