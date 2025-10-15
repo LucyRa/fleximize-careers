@@ -4,6 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://fleximize.com/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://fleximize.com/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
         <title>{{ config('app.name', 'Fleximize Careers') }}</title>
 
         <!-- Core base styles -->
