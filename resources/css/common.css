@@ -13,7 +13,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @media only screen and (min-width: 46.5rem) {
+    @media only screen and (min-width: 27.5rem) {
         width: fit-content;
         margin-block-end: 2rem;
     }

@@ -40,7 +40,8 @@ h2.box-heading {
 }
 
 h4,
-.h4 {
+.h4,
+li.scroll-card h3 {
     font-size: 1.375rem;
 }
 
