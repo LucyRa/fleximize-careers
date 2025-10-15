@@ -13,13 +13,23 @@ button {
     flex-wrap: nowrap;
     align-items: center;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border: 0.125rem solid transparent;
     border-radius: 99rem;
     background-color: var(--white);
     color: var(--navy);
     font-weight: 700;
+    transition: color ease 0.3s,
+        border-color ease 0.3s,
+        background-color ease 0.3s;
 
     svg {
         width: 2.5rem;
+    }
+
+    &:hover {
+        color: var(--white);
+        border-color: var(--white);
+        background-color: transparent;
     }
 }
 

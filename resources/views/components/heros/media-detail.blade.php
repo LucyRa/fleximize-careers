@@ -10,7 +10,7 @@
             <x-btns.action-btn cta="Current Openings"
                 icon="arrow-full"
                 action="scroll-to"
-                target="#job-listings"
+                target="job-listings"
             />
         </article>
 
